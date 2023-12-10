@@ -21,21 +21,22 @@
 						<span class="bar"></span>
 					</div>
 					<ul class="nav no-search">
-						<li class="nav-item"><a href="#">Home</a></li>
-						<li class="nav-item"><a href="#">Sobre</a></li>
-						<li class="nav-item"><a href="#">Cardápio</a></li>
-						<li class="nav-item"><a href="#">Contato</a></li>
-						<li class="nav-item"><a href="#">Trabalhe conosco</a></li>
-						<i class="fas fa-search" id="search-icon"></i>
-						<input class="search-input" type="text" placeholder="Search.." />
+						<li class="nav-item"><a href="#home">Home</a></li>
+						<li class="nav-item"><a href="#sobre">Sobre</a></li>
+						<li class="nav-item"><a href="#menu">Menu</a></li>
+						<li class="nav-item"><a href="#contato">Contato</a></li>
 					</ul>
 				</nav>
 			</div>
-			<section class="headline">
+			<section class="headline" id="home">
 				<img src="logohealthybg.png" class="imghealthy" />
 			</section>
-			<h1 class="start">Estamos muito entusiasmados em apresentar a você uma experiência gastronômica que não apenas alimenta seu corpo, mas também nutre sua alma: nossa linha de deliciosas opções de comida saudável.</h1>
-			<section class="features">
+			<section>
+				<h1 class="start">
+					Estamos muito entusiasmados em apresentar a você uma experiência gastronômica que não apenas alimenta seu corpo, mas também nutre sua alma: nossa linha de deliciosas opções de comida saudável.
+				</h1>
+			</section>
+			<section class="features" id="sobre">
 				<div class="feature-container">
 					<img src="controledepeso.jpg"">
 					<h2>Controle de peso</h2>
@@ -55,9 +56,63 @@
 					<p>Cultivar uma alimentação saudável não é apenas uma escolha, mas um estilo de vida. Desenvolver hábitos alimentares saudáveis hoje contribui para uma vida longa e vibrante.</p>
 				</div>
 			</section>
+			<h2>Menu</h2>
+			<section class="features" id="menu">
+				<div class="feature-container">
+					<img src="saladasalmao.jpg">
+					<h2>Salada de Salmão</h2>
+					<p>Mix de folhas verdes com tomates cereja, cebola caramelizada, milho verde, croutons, parmesão e um delicioso salmão grelhado com molho de mustarda e mel finalizado com semente de sésamo. <strong>15€</strong></p>
+				</div>
+				<div class="feature-container">
+					<img src="wrapfrango.jpg" />
+					<h2>Wrap de Frango</h2>
+					<p>O suculento frango grelhado, temperado com um toque especial de ervas, é a estrela principal deste wrap feito com massa integral. A textura tenra e sabor marcante do frango complementa perfeitamente a cremosidade do hummus caseiro, que é preparado com grão-de-bico de alta qualidade e um toque de alho. <strong>13€</strong></p>
+				</div>
+				<div class="feature-container">
+					<img src="sopaabobora.jpg" />
+					<h2>Sopa de Abóbora com batata</h2>
+					<p>Mergulhe em uma experiência culinária reconfortante com a nossa Sopa de Abóbora e Batata Baroa com Carne Seca, uma obra-prima irresistível que aquece o corpo e encanta o paladar. Cada colher revela uma sinfonia de sabores harmoniosos, criando uma explosão de prazer para os amantes de boa comida. <strong>12€</strong></p>
+				</div>
+				<div class="feature-container">
+					<img src="saladaquinoa.jpeg" />
+					<h2>Salada de Quinoa</h2>
+					<p>Experimente uma explosão de frescor e nutrientes com a nossa Salada de Quinoa com Atum e Tomates. Esta criação exuberante é mais do que uma simples salada - é uma celebração de sabores vibrantes e ingredientes saudáveis que se unem para criar uma experiência gastronômica excepcional. <strong>17€</strong></p>
+				</div>
+				<div class="feature-container">
+					<img src="legumessalteados.jpeg" />
+					<h2>Legumes salteados</h2>
+					<p>Eleve o seu paladar a novas alturas com a nossa deliciosa mistura de Legumes Salteados com Ervas e Manteiga Fresca, uma opção saudável que combina perfeitamente o sabor natural dos vegetais frescos com o toque irresistível de ervas frescas e manteiga de alta qualidade. <strong>16€</strong></p>
+				</div>
+				<div class="feature-container">
+					<img src="tartemorango.jpeg" />
+					<h2>Tarte de morango</h2>
+					<p>Desfrute de uma experiência decadente e saudável com a nossa irresistível Tarte de Morango Low Carb com Lascas de Amêndoas. Cada mordida é uma celebração de sabores frescos e texturas crocantes, cuidadosamente combinados para criar um momento indulgente que se alinha perfeitamente com um estilo de vida de baixo teor de carboidratos. <strong>5€</strong></p>
+				</div>						
+			</section>
 		</div>
-		
-		<footer>
+		<div id="contato">
+			<form>
+				<div>
+					<label for="nome">Nome:</label>
+					<input type="texto" id="nome" name="nome_usuario">
+				</div>
+				<div>
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email_usuario">
+				</div>
+				<div>
+					<label for="texto">Texto:</label>
+					<textarea id="texto" name="texto_usuario"></textarea>
+				</div>		 
+			</form>
+		</div>
+
+<div class="button">
+  <button type="submit">Enviar</button>
+</div>
+
+
+		<footer class="footer">
 			<p>Copyright &copy; 2023 <img src="logohealthybg.png" alt="logo" /> All Rights Reserved.</p>
 		</footer>
 	</body>
